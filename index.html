@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>TPT blog</title>
+</head>
+<body>
+    <header class="head">
+        <header class="head-item logo">
+            <p>TPT blog</p>
+        </header>
+        <nav class="head-item menu">
+            <a href="#">Home</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About</a>
+            <a href="" id="for-mobile">  <i class="fas fa-search" id="search-icon"></i></a>
+        </nav>
+        <div class="head-item search-box">
+          
+            <form>
+                <i class="fas fa-search" id="search-icon"></i>
+                <input type="search" id="search" placeholder="Search...">
+               
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="sidebar main-item">
+            <h2>Category</h2>
+            <div>
+                <a href="" style="background-color: rgb(104, 185, 255);">New posts</a>
+                <a href="">Most favourite posts</a>
+                <a href="">Most thougtful posts</a>
+                <a href="">Life</a>
+                <a href="">Programming</a>
+                <a href="">Self-help</a>
+                <a href="">Start-up</a>
+            </div>
+        </section>
+        <section class="mail-box main-item">
+            <form>
+                <h2>Subscribe my blog:</h2>
+                <input type="email" id="mail" placeholder="Your email" required>
+                <button type="submit" id="subscribe">Submit</button>
+            </form>
+        </section>
+        <section class="media main-item">
+                <h2>Media</h2>
+                <div>
+                    <a href=""><img src="./facebook.png"></a>
+                    <a href=""><img src="./twitter.png"></a>
+                    <a href=""><img src="./github.png"></a>
+                </div>
+        </section>
+        <section class="copyright main-item">
+            <p>Copyright &copy by TPT in 2021</p>
+            <p>All rights reserved. Designed by TPT.</p>
+        </section>
+        <section class="content-box">
+            <article class="post">
+                <h1>NOFAP - trở lại con đường thành người chánh đạo</h1>
+                <p>Cuộc đấu tranh giữa FAP và no-fap là cuộc chiến không cân sức, cuộc chiến giữa sướng nhất thời và “không sướng”, khi mà FAP được hỗ trợ quá nhiều vũ khí để chiếm ưu thế như porn, nude, internet, những bài báo, những ông thánh phán online nói rằng quay tay điều độ là tốt. </p>
+                <div>
+                    <p >Date: <span id="date"></span></p> 
+                    <p>Viewer:<span id="view"></span> <p>
+                </div>
+                <a href="./Life/NOFAP/NOFAP.html" id="read-more"> Read more </a>
+            </article>
+            <article class="post">
+                <h1>Learning in DUY TAN university process</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consequuntur nemo nostrum commodi voluptatum numquam, voluptate dolorem, accusantium maxime alias architecto fugit. Eaque et tenetur odit aliquid nobis, nihil optio.</p>
+                <div>
+                    <p>Date: <span id="date-1"></span></p> 
+                    <p>Viewer: ....</p>
+                </div>
+                <a href="./Self-help/DuyTan/DTU.html" id="read-more"> Read more </a>
+            </article>
+            <article class="post">
+                <h1>Here is the area of the post title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consequuntur nemo nostrum commodi voluptatum numquam, voluptate dolorem, accusantium maxime alias architecto fugit. Eaque et tenetur odit aliquid nobis, nihil optio.</p>
+                <div>
+                    <p>Date: dd/mm/yyyy</p> 
+                    <p>Viewer: ....</p>
+                </div>
+                <a href="./Life/NOFAP/NOFAP.html" id="read-more"> Read more </a>
+            </article>
+            <article class="post">
+                <h1>Here is the area of the post title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consequuntur nemo nostrum commodi voluptatum numquam, voluptate dolorem, accusantium maxime alias architecto fugit. Eaque et tenetur odit aliquid nobis, nihil optio.</p>
+                <div>
+                    <p>Date: dd/mm/yyyy</p> 
+                    <p>Viewer: ....</p>
+                </div>
+                <a href="./Life/NOFAP/NOFAP.html" id="read-more"> Read more </a>
+            </article>
+            <article class="post">
+                <h1>Here is the area of the post title</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde consequuntur nemo nostrum commodi voluptatum numquam, voluptate dolorem, accusantium maxime alias architecto fugit. Eaque et tenetur odit aliquid nobis, nihil optio.</p>
+                <div>
+                    <p>Date: dd/mm/yyyy</p> 
+                    <p>Viewer: ....</p>
+                </div>
+                <a href="./Life/NOFAP/NOFAP.html" id="read-more"> Read more </a>
+            </article>
+            <div class="arrow">
+                <i class="fas fa-chevron-left"> </i>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+    </main>
+    <script >
+        const d = new Date();
+        document.getElementById("date").innerHTML = d;
+
+        const d1 = new Date();
+        document.getElementById("date-1").innerHTML = d1;
+
+        var view = document.getElementById("read-more");
+        view.onclick = document.getElementById("view").innerHTML ++;
+    </script>
+</body>
+</html>
